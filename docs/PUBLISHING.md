@@ -8,15 +8,30 @@
 - Version: `1.0.0`
 - Description source: [`STEAM_DESCRIPTION.txt`](../STEAM_DESCRIPTION.txt)
 
-Build and stage the package:
+Run the complete preparation and uploader workflow:
 
 ```bash
-./scripts/build.sh
-./scripts/package-workshop.sh
+./scripts/prepare-workshop-upload.sh
 ```
 
-Open Pocketpair's Palworld Mod Uploader, reload Workshop item `3783134964`,
-and upload `dist/BuildingPlacementTweaks-1.0.0/`.
+The script removes generated working data, validates the committed release
+artifacts, stages the release package, synchronizes it into the existing local
+Workshop item `3783134964`, checks the local uploader environment, and opens
+Pocketpair's Palworld Mod Uploader. Select the item, press `Reload` if needed,
+verify the displayed metadata and use `Upload To Steam`.
+
+The sync preserves `.workshop.json`, verifies its Published ID before writing,
+and removes only the previous package's validated client and server filenames.
+
+After changing the mod itself, build and commit the new version before running
+the publishing workflow. This keeps the Steam package aligned with the GitHub
+release and repository checksums.
+
+Prepare and verify the package without opening the uploader:
+
+```bash
+./scripts/prepare-workshop-upload.sh --prepare-only
+```
 
 Suggested change note:
 

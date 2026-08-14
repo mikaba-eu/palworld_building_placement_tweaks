@@ -46,6 +46,7 @@ participating client, host, and server installations.
 
 - [Source repository](https://github.com/mikaba-eu/palworld_building_placement_tweaks)
 - [Build and release guide](docs/BUILD.md)
+- [One-command Workshop publishing](docs/PUBLISHING.md#steam-workshop)
 - [Steam Workshop description](STEAM_DESCRIPTION.txt)
 - [Publishing checklist](docs/PUBLISHING.md)
 - [Technical details](docs/TECHNICAL_DETAILS.md)
