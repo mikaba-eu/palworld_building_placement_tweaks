@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>BuildingPlacementTweaks.Builder</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UAssetApiProject Condition="'$(UAssetApiProject)' == ''">$(MSBuildProjectDirectory)/../../.deps/UAssetAPI/UAssetAPI/UAssetAPI.csproj</UAssetApiProject>
+  </PropertyGroup>
+  <Target Name="RequireUAssetApi" BeforeTargets="ResolveProjectReferences"
+          Condition="!Exists('$(UAssetApiProject)')">
+    <Error Text="UAssetAPI project not found at '$(UAssetApiProject)'. Run ./scripts/setup-dependencies.sh or pass -p:UAssetApiProject=/path/to/UAssetAPI.csproj." />
+  </Target>
+  <ItemGroup>
+    <ProjectReference Include="$(UAssetApiProject)" />
+  </ItemGroup>
+</Project>

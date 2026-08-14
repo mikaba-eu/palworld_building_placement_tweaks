@@ -1,0 +1,5 @@
+/.deps/
+/src/PlacementBuilder/bin/
+/src/PlacementBuilder/obj/
+/build/
+/dist/

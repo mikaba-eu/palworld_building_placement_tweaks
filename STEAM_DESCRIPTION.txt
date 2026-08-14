@@ -1,0 +1,45 @@
+[h1]Building Placement Tweaks[/h1]
+
+Building Placement Tweaks gives Base builders more room to create. Combine
+supported pieces more closely, adapt builds to difficult terrain, reach new
+heights, and realize larger, more ambitious layouts.
+
+[h2]Highlights[/h2]
+[list]
+[*]Place supported structures, decorations, lights, and workstations closer together or overlap them for detailed builds
+[*]Shape creative builds on steep slopes and uneven ground
+[*]Expand upward and downward, including elevated and floating sections
+[*]Grow larger Bases with greatly expanded construction capacity
+[*]Place Breeding Farms, Ranches, Palboxes, Item Retrieval Machines, Pal Essence Condensers, and Pal Expedition Stations more flexibly
+[*]Continue building throughout the area around the Palbox
+[*]Place as many Pal Expedition Stations in each Base as you want
+[/list]
+
+[h2]Supported content[/h2]
+
+Ancient, Glass, Japanese-Style, Metal, Clean, Stone, and Wooden building sets;
+defensive walls; beds; fences; decorative landscaping; fireplaces; lamps;
+street lights; workbenches; the Breeding Farm; Palbox; Ranch; Item Retrieval
+Machine; Pal Essence Condenser; and Pal Expedition Station.
+
+[url=https://github.com/mikaba-eu/palworld_building_placement_tweaks/blob/main/docs/FEATURES.md]View the exact list of all changed structures[/url]
+
+[h2]Installation[/h2]
+
+Subscribe, enable [b]Building Placement Tweaks[/b] under
+[b]Options -> Mod Management[/b], and restart Palworld.
+
+[h2]Source and dedicated servers[/h2]
+
+[url=https://github.com/mikaba-eu/palworld_building_placement_tweaks]Source repository[/url]
+
+[url=https://github.com/mikaba-eu/palworld_building_placement_tweaks/releases/latest/download/BuildingPlacementTweaks_LinuxServer_P.pak]Download the Linux Dedicated Server PAK[/url]
+
+The Workshop download supports Windows players and Windows Dedicated Servers.
+Linux server owners can use the matching Linux Dedicated Server PAK from the
+GitHub release.
+
+[h2]Compatibility[/h2]
+
+For the most consistent placement behavior, use Building Placement Tweaks as
+your main building-placement mod.

@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "notes": [
+    "The configuration is ordered for review: enable or disable a group, maintain its assets, then define its values.",
+    "allowOverlap=true enables overlapping placement for the selected structures.",
+    "installStrategy=Normal applies standard placement behavior where the source asset already exposes this setting.",
+    "advancedProperties holds targeted values outside the common placement settings.",
+    "dataTableRows changes existing fields in named DataTable rows and fails closed when a row or field is missing."
+  ],
+  "schemaDependencies": [
+    {
+      "asset": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Base/BP_BuildObject_Torch_Base",
+      "forGroups": [
+        "Lights"
+      ],
+      "forPlatforms": [
+        "windows-client",
+        "windows-server"
+      ]
+    },
+    {
+      "asset": "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Base/BP_BuildObject_Lamp_Base",
+      "forGroups": [
+        "Lights"
+      ],
+      "forPlatforms": [
+        "windows-client",
+        "windows-server"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "GeneralBuildingObjects",
+      "description": "Enables overlapping placement for the listed structures and decorations.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_DoorWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_Foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_Roof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_Stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_TriangleRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_TriangleStairsCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_Wall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Ancient_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_DefenseWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_DefenseWall_Metal",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_DefenseWall_Wood",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_FlowerBed",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_DoorWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_Foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_Roof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_Stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_TriangleRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_TriangleStairsCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_Wall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Glass_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_TriangleRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_TriangleStairsCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Iron_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_DoorWall_01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_DoorWall_02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_DoorWall_03",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleRoof_01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleRoof_02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleStairsCorner_01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleStairsCorner_02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_Wall_01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_roof_01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_roof_02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_JapaneseStyle_stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_DoorWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_Foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_Gate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_Roof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_Stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_Wall_V2",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Metal_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_PlayerBed",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_PlayerBed_02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_PlayerBed_03",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_DoorWall_02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_Foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_Roof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_Stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_TriangleRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_TriangleStairsCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_Wall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_SF_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_DoorWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_Foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_Gate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_Roof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_Stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_TriangleRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_TriangleStairsCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_Wall_V2",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Stone_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_DiagonalWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_DoorWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Foundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Gate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Ladder",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Pillar",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_PyramidRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Roof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_SlantedRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_SlopedRoofCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_SlopedRoofCornerReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Stair",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_TriangleFoundation",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_TriangleRoof",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_TriangleStairsCorner",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_TriangleWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_TriangleWallReverse",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_WallGate",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_Wall_V2",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Wood_WindowWall",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Ancient_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureBush01_Flower",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureBush01_Green",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureBush01_Snow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureBush01_Tropical",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureBush01_Yellow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureBush02_Flower",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureStone01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Bamboo",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Cherry",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Desert",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Green",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Red",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Snow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Tropical",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree01_Yellow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Bamboo",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Cherry",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Desert",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Green",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Red",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Snow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Tropical",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree02_Yellow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Bamboo",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Cherry",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Desert",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Green",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Red",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Snow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Tropical",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_FurnitureTree03_Yellow",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Glass_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Iron_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_JapaneseStyle_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_SF_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Wire_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Wood_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_WoodenBarricade"
+      ],
+      "settings": {
+        "allowOverlap": true
+      }
+    },
+    {
+      "name": "Lights",
+      "description": "Enables overlapping placement for lamps, torches, fireplaces, and lanterns.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_CandleStand",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_LampStand",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_LampStandLarge",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_TorchStand",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_FirePlace01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_FirePlace02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_FloorLamp01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_FloorLamp02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_LightPole01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_LightPole02",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_LightPole03",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_LightPole04",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Light_Shrine_Lantern"
+      ],
+      "settings": {
+        "allowOverlap": true
+      }
+    },
+    {
+      "name": "Utility",
+      "description": "Enables overlapping placement for the sign and both workbenches.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Signboard",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_WorkBench",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_WorkBench_SkillUnlock"
+      ],
+      "settings": {
+        "allowOverlap": true
+      }
+    },
+    {
+      "name": "BreedingFarm",
+      "description": "Gives the Breeding Farm standard placement behavior and overlapping placement.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_BreedFarm"
+      ],
+      "settings": {
+        "allowOverlap": true,
+        "installStrategy": "Normal"
+      }
+    },
+    {
+      "name": "Palbox",
+      "description": "Gives the Palbox standard placement behavior, overlapping placement, and building access within its surrounding placement volume.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_PalBoxV2"
+      ],
+      "settings": {
+        "allowOverlap": true,
+        "installStrategy": "Normal"
+      },
+      "advancedProperties": [
+        {
+          "export": "PalLimitVolumeBox_GEN_VARIABLE",
+          "propertyPath": [
+            "LimitFlags"
+          ],
+          "type": "Int",
+          "value": 6,
+          "createIfMissing": false,
+          "explanation": "Value 6 keeps the enemy-spawn and map-object-spawn protections while allowing building in the volume."
+        }
+      ]
+    },
+    {
+      "name": "ItemRetrievalMachine",
+      "description": "Enables overlapping placement for the Item Retrieval Machine.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_BaseCampItemDispenser"
+      ],
+      "settings": {
+        "allowOverlap": true
+      }
+    },
+    {
+      "name": "Ranch",
+      "description": "Gives the Ranch standard placement behavior and overlapping placement.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_MonsterFarm"
+      ],
+      "settings": {
+        "allowOverlap": true,
+        "installStrategy": "Normal"
+      }
+    },
+    {
+      "name": "PalEssenceCondenser",
+      "description": "Enables overlapping placement for the Pal Essence Condenser.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_CharacterRankUp"
+      ],
+      "settings": {
+        "allowOverlap": true
+      }
+    },
+    {
+      "name": "ExpeditionStation",
+      "description": "Enables overlapping placement for the Pal Expedition Station.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_Expedition"
+      ],
+      "settings": {
+        "allowOverlap": true
+      }
+    },
+    {
+      "name": "ExpeditionStationPerBaseLimit",
+      "description": "Allows any number of Pal Expedition Stations in each Base.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectDataTable"
+      ],
+      "settings": {},
+      "dataTableRows": [
+        {
+          "row": "Expedition",
+          "propertyPath": [
+            "InstallMaxNumInBaseCamp"
+          ],
+          "type": "Int",
+          "expectedValue": 1,
+          "value": 0,
+          "explanation": "The source value is 1; value 0 allows any number of this structure in each Base."
+        }
+      ]
+    },
+    {
+      "name": "GlobalBuildSettings",
+      "description": "Expands the global slope, height, capacity, and foundation-floating ranges.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/System/BP_PalGameSetting"
+      ],
+      "settings": {},
+      "advancedProperties": [
+        {
+          "export": "$CDO",
+          "propertyPath": [
+            "BuildSimulationFoundationFloatingAllowance"
+          ],
+          "type": "Float",
+          "value": 100000000,
+          "createIfMissing": true
+        },
+        {
+          "export": "$CDO",
+          "propertyPath": [
+            "BuildSimulationLeanAngleMax"
+          ],
+          "type": "Float",
+          "value": 90,
+          "createIfMissing": true
+        },
+        {
+          "export": "$CDO",
+          "propertyPath": [
+            "PlayerRecord_BuildingObjectMaxNum"
+          ],
+          "type": "Int",
+          "value": 100000000,
+          "createIfMissing": true
+        },
+        {
+          "export": "$CDO",
+          "propertyPath": [
+            "BuildingMaxZ"
+          ],
+          "type": "Float",
+          "value": 100000000,
+          "createIfMissing": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "ModName": "Building Placement Tweaks",
+  "PackageName": "BuildingPlacementTweaks",
+  "Thumbnail": "thumbnail.png",
+  "Version": "1.0.0",
+  "DebugMode": false,
+  "MinRevision": 82182,
+  "Author": "mika",
+  "Dependencies": [],
+  "Tags": [
+    "Utilities",
+    "Gameplay"
+  ],
+  "InstallRule": [
+    {
+      "Type": "Paks",
+      "Targets": [
+        "./Client"
+      ]
+    },
+    {
+      "Type": "Paks",
+      "IsServer": true,
+      "Targets": [
+        "./Server"
+      ]
+    }
+  ]
+}
