@@ -3,6 +3,8 @@
 ## 1.0.3
 
 - Added flexible placement for the Fishing Pond and Large Fishing Pond.
+- Rebuilt the Windows Dedicated Server package for Palworld server build
+  `24575149`.
 
 ## 1.0.2
 

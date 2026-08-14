@@ -8,6 +8,7 @@ repository [README](../README.md), and the complete structure list is in
 ## Build reference
 
 - Palworld client build: `24467282`
+- Palworld Windows Dedicated Server build: `24575149`
 - Configured assets per platform: `209`
 - Configured changes per platform: `218`
 - Structures and facilities with overlapping placement: `206`
