@@ -213,6 +213,7 @@
         "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Iron_Fence",
         "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_JapaneseStyle_Fence",
         "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_SF_Fence",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Stone_Fence",
         "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Wire_Fence",
         "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_Wood_Fence",
         "Pal/Content/Pal/Blueprint/MapObject/BuildObject/Furniture/BP_BuildObject_WoodenBarricade"
@@ -354,8 +355,8 @@
           ],
           "type": "Int",
           "expectedValue": 1,
-          "value": 0,
-          "explanation": "The source value is 1; value 0 allows any number of this structure in each Base."
+          "value": 100000000,
+          "explanation": "The source value is 1; the expanded value removes the practical per-Base limit without relying on zero-value fallback behavior."
         }
       ]
     },

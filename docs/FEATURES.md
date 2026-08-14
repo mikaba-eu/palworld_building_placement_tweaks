@@ -75,14 +75,14 @@ Foundation, Clean Triangular Roof, Clean Corner Roof, Clean Triangular Wall,
 Clean Triangular Wall (Inverted), Clean Wall, Clean Pal Passage Entrance, Clean
 Wall and Window, Clean Fence.
 
-### Stone building set (19)
+### Stone building set (20)
 
 Stone Diagonal Wall, Stone Door, Stone Foundation, Stone Gate, Stone Pillar,
 Stone Pyramid Roof, Stone Roof, Stone Slanted Roof, Stone Slanted Triangular
 Roof, Stone Slanted Corner Roof (Inverted), Stone Stairs, Stone Triangular
 Foundation, Stone Triangular Roof, Stone Corner Roof, Stone Triangular Wall,
 Stone Triangular Wall (Inverted), Stone Pal Passage Entrance, Stone Wall, Stone
-Wall and Window.
+Wall and Window, Stone Fence.
 
 ### Wooden building set (21)
 
