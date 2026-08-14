@@ -1,15 +1,15 @@
 # Technical details
 
 This document contains the implementation-facing values and package scope for
-Building Placement Tweaks version 1.0.1. The player-facing overview is in the
+Building Placement Tweaks version 1.0.2. The player-facing overview is in the
 repository [README](../README.md), and the complete structure list is in
 [FEATURES.md](FEATURES.md).
 
 ## Build reference
 
 - Palworld client build: `24467282`
-- Configured assets per platform: `206`
-- Configured changes per platform: `213`
+- Configured assets per platform: `207`
+- Configured changes per platform: `214`
 - Structures and facilities with overlapping placement: `204`
 
 The overlap total consists of the 198 structures listed by category in
@@ -26,9 +26,10 @@ The overlap total consists of the 198 structures listed by category in
 
 ## Pal Expedition Station capacity
 
-The `Expedition` row in the building data sets
-`InstallMaxNumInBaseCamp` to `100000000`. This removes the practical per-Base
-maximum without relying on how the Expedition Station path interprets zero.
+The `Expedition` row sets `InstallMaxNumInBaseCamp` to `100000000` in both
+`DT_BuildObjectDataTable` and its `DT_BuildObjectDataTable_Common` parent. The
+parent must be patched because the composite table rebuilds its runtime rows
+from that source.
 
 ## Package targets
 

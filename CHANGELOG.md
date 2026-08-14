@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2
+
+- Fixed the limit message that appeared before placing another Pal Expedition
+  Station in a Base.
+
 ## 1.0.1
 
 - Changed the expanded Pal Expedition Station capacity from a zero value to an

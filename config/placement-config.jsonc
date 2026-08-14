@@ -344,7 +344,8 @@
       "description": "Allows any number of Pal Expedition Stations in each Base.",
       "enabled": true,
       "assets": [
-        "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectDataTable"
+        "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectDataTable",
+        "Pal/Content/Pal/DataTable/MapObject/Building/DT_BuildObjectDataTable_Common"
       ],
       "settings": {},
       "dataTableRows": [
@@ -356,7 +357,7 @@
           "type": "Int",
           "expectedValue": 1,
           "value": 100000000,
-          "explanation": "The source value is 1; the expanded value removes the practical per-Base limit without relying on zero-value fallback behavior."
+          "explanation": "The source value is 1 in both the composite table and its Common parent; patching both keeps the expanded value when the composite table rebuilds at runtime."
         }
       ]
     },

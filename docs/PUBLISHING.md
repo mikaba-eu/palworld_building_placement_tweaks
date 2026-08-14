@@ -5,7 +5,7 @@
 - Item: <https://steamcommunity.com/sharedfiles/filedetails/?id=3783134964>
 - Title: `Building Placement Tweaks`
 - Package type: `Paks`
-- Version: `1.0.1`
+- Version: `1.0.2`
 - Description source: [`STEAM_DESCRIPTION.txt`](../STEAM_DESCRIPTION.txt)
 
 Run the complete preparation and uploader workflow:
@@ -49,8 +49,8 @@ Stage the release assets:
 ./scripts/package-github.sh
 ```
 
-Publish every file in `dist/BuildingPlacementTweaks-1.0.1-github/` as an
-individual release asset for tag `v1.0.1`. Keep the filenames unchanged so
+Publish every file in `dist/BuildingPlacementTweaks-1.0.2-github/` as an
+individual release asset for tag `v1.0.2`. Keep the filenames unchanged so
 the links in the Steam description remain stable.
 
 Repository: <https://github.com/mikaba-eu/palworld_building_placement_tweaks>
