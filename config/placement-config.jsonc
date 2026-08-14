@@ -318,6 +318,19 @@
       }
     },
     {
+      "name": "FishingPonds",
+      "description": "Gives both Fishing Ponds standard placement behavior and overlapping placement.",
+      "enabled": true,
+      "assets": [
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_FishingPond01",
+        "Pal/Content/Pal/Blueprint/MapObject/BuildObject/BP_BuildObject_FishingPond02"
+      ],
+      "settings": {
+        "allowOverlap": true,
+        "installStrategy": "Normal"
+      }
+    },
+    {
       "name": "PalEssenceCondenser",
       "description": "Enables overlapping placement for the Pal Essence Condenser.",
       "enabled": true,

@@ -1,19 +1,24 @@
 # Technical details
 
 This document contains the implementation-facing values and package scope for
-Building Placement Tweaks version 1.0.2. The player-facing overview is in the
+Building Placement Tweaks version 1.0.3. The player-facing overview is in the
 repository [README](../README.md), and the complete structure list is in
 [FEATURES.md](FEATURES.md).
 
 ## Build reference
 
 - Palworld client build: `24467282`
-- Configured assets per platform: `207`
-- Configured changes per platform: `214`
-- Structures and facilities with overlapping placement: `204`
+- Configured assets per platform: `209`
+- Configured changes per platform: `218`
+- Structures and facilities with overlapping placement: `206`
 
 The overlap total consists of the 198 structures listed by category in
-`FEATURES.md` and the six Base facilities listed there separately.
+`FEATURES.md` and the eight Base facilities listed there separately.
+
+## Fishing Pond placement
+
+The Fishing Pond and Large Fishing Pond use the standard `Normal` install
+strategy and allow overlapping placement.
 
 ## Global building values
 

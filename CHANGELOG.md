@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- Added flexible placement for the Fishing Pond and Large Fishing Pond.
+
 ## 1.0.2
 
 - Fixed the limit message that appeared before placing another Pal Expedition

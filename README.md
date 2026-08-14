@@ -13,8 +13,8 @@ new heights, and realize larger, more ambitious layouts.
 - Shape creative builds on steep slopes and uneven ground.
 - Expand upward and downward, including elevated and floating sections.
 - Grow larger Bases with greatly expanded construction capacity.
-- Place Breeding Farms, Ranches, Palboxes, Item Retrieval Machines, Pal Essence
-  Condensers, and Pal Expedition Stations more flexibly.
+- Place Breeding Farms, Ranches, Fishing Ponds, Palboxes, Item Retrieval
+  Machines, Pal Essence Condensers, and Pal Expedition Stations more flexibly.
 - Continue building throughout the area around the Palbox.
 - Place as many Pal Expedition Stations in each Base as you want.
 

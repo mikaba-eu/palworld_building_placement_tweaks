@@ -10,7 +10,7 @@ heights, and realize larger, more ambitious layouts.
 [*]Shape creative builds on steep slopes and uneven ground
 [*]Expand upward and downward, including elevated and floating sections
 [*]Grow larger Bases with greatly expanded construction capacity
-[*]Place Breeding Farms, Ranches, Palboxes, Item Retrieval Machines, Pal Essence Condensers, and Pal Expedition Stations more flexibly
+[*]Place Breeding Farms, Ranches, Fishing Ponds, Palboxes, Item Retrieval Machines, Pal Essence Condensers, and Pal Expedition Stations more flexibly
 [*]Continue building throughout the area around the Palbox
 [*]Place as many Pal Expedition Stations in each Base as you want
 [/list]
@@ -19,8 +19,9 @@ heights, and realize larger, more ambitious layouts.
 
 Ancient, Glass, Japanese-Style, Metal, Clean, Stone, and Wooden building sets;
 defensive walls; beds; fences; decorative landscaping; fireplaces; lamps;
-street lights; workbenches; the Breeding Farm; Palbox; Ranch; Item Retrieval
-Machine; Pal Essence Condenser; and Pal Expedition Station.
+street lights; workbenches; the Breeding Farm; Palbox; Ranch; Fishing Pond;
+Large Fishing Pond; Item Retrieval Machine; Pal Essence Condenser; and Pal
+Expedition Station.
 
 [url=https://github.com/mikaba-eu/palworld_building_placement_tweaks/blob/main/docs/FEATURES.md]View the exact list of all changed structures[/url]
 

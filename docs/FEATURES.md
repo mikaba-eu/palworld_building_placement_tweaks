@@ -16,6 +16,8 @@ Tweaks.
 - **Palbox:** more flexible placement, including overlap, plus building access
   throughout its surrounding area
 - **Ranch:** more flexible placement, including overlap
+- **Fishing Pond:** more flexible placement, including overlap
+- **Large Fishing Pond:** more flexible placement, including overlap
 - **Item Retrieval Machine:** can overlap nearby structures
 - **Pal Essence Condenser:** can overlap nearby structures
 - **Pal Expedition Station:** can overlap nearby structures, with any number
