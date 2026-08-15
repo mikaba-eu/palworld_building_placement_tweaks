@@ -5,7 +5,7 @@
 - Item: <https://steamcommunity.com/sharedfiles/filedetails/?id=3783134964>
 - Title: `Building Placement Tweaks`
 - Package type: `Paks`
-- Version: `1.0.3`
+- Version: `1.0.4`
 - Description source: [`STEAM_DESCRIPTION.txt`](../STEAM_DESCRIPTION.txt)
 
 Run the complete preparation and uploader workflow:
@@ -36,7 +36,7 @@ Prepare and verify the package without opening the uploader:
 Suggested change note:
 
 ```text
-Added flexible placement for the Fishing Pond and Large Fishing Pond.
+Rebuilt the mod for Palworld 1.0.3 so the game's updated building costs are preserved.
 ```
 
 ## GitHub release
@@ -47,8 +47,8 @@ Stage the release assets:
 ./scripts/package-github.sh
 ```
 
-Publish every file in `dist/BuildingPlacementTweaks-1.0.3-github/` as an
-individual release asset for tag `v1.0.3`. Keep the filenames unchanged so
+Publish every file in `dist/BuildingPlacementTweaks-1.0.4-github/` as an
+individual release asset for tag `v1.0.4`. Keep the filenames unchanged so
 the links in the Steam description remain stable.
 
 Repository: <https://github.com/mikaba-eu/palworld_building_placement_tweaks>

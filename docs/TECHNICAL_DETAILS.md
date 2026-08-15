@@ -1,14 +1,15 @@
 # Technical details
 
 This document contains the implementation-facing values and package scope for
-Building Placement Tweaks version 1.0.3. The player-facing overview is in the
+Building Placement Tweaks version 1.0.4. The player-facing overview is in the
 repository [README](../README.md), and the complete structure list is in
 [FEATURES.md](FEATURES.md).
 
 ## Build reference
 
-- Palworld client build: `24467282`
+- Palworld client build: `24575825`
 - Palworld Windows Dedicated Server build: `24575149`
+- Palworld Linux Dedicated Server build: `24575149`
 - Configured assets per platform: `209`
 - Configured changes per platform: `218`
 - Structures and facilities with overlapping placement: `206`
@@ -36,6 +37,10 @@ The `Expedition` row sets `InstallMaxNumInBaseCamp` to `100000000` in both
 `DT_BuildObjectDataTable` and its `DT_BuildObjectDataTable_Common` parent. The
 parent must be patched because the composite table rebuilds its runtime rows
 from that source.
+
+Both DataTables are complete asset replacements. They must therefore be rebuilt
+from the current Palworld sources after a game update so unrelated vanilla row
+values, including construction costs, remain current.
 
 ## Package targets
 

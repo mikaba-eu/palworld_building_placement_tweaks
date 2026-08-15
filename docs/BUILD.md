@@ -65,9 +65,9 @@ the checksum manifest.
 ./scripts/package-github.sh
 ```
 
-The Workshop package is written to `dist/BuildingPlacementTweaks-1.0.3/`.
+The Workshop package is written to `dist/BuildingPlacementTweaks-1.0.4/`.
 The GitHub release assets are staged in
-`dist/BuildingPlacementTweaks-1.0.3-github/`. Publish each file in that
+`dist/BuildingPlacementTweaks-1.0.4-github/`. Publish each file in that
 directory as an individual release asset. This keeps the direct Linux PAK URL
 stable.
 

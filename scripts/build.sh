@@ -10,7 +10,7 @@ work_dir="$repo_dir/build/work"
 
 windows_client_pak="$workspace_dir/client/Palworld/Pal/Content/Paks/Pal-Windows.pak"
 windows_server_pak="$workspace_dir/pal_data/server_bins/build-24575149/windows/Pal-WindowsServer.pak"
-linux_server_pak="$workspace_dir/pal_data/server_bins/Pal-LinuxServer.pak"
+linux_server_pak="$workspace_dir/pal_data/server_bins/build-24575149/linux/Pal-LinuxServer.pak"
 mapping_path="$workspace_dir/pal_data/mappings/2026-08-02/Pal-5.1.1-0+++UE5+Release-5.1-c838a8ac.usmap"
 repak_bin="${REPAK_BIN:-}"
 dotnet_bin="${DOTNET_BIN:-}"

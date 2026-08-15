@@ -7,7 +7,7 @@ repo_dir="$(cd -- "$script_dir/.." && pwd)"
 jq --exit-status '
     .ModName == "Building Placement Tweaks"
     and .PackageName == "BuildingPlacementTweaks"
-    and .Version == "1.0.3"
+    and .Version == "1.0.4"
     and .Thumbnail == "thumbnail.png"
 ' "$repo_dir/Info.json" >/dev/null
 jq empty "$repo_dir/config/placement-config.jsonc"

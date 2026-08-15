@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4
+
+- Rebuilt every platform package from current Palworld 1.0.3 data.
+- Preserved the updated material costs for the Large Power Generator, Crude
+  Oil Extractor, and Advanced Crude Oil Extractor.
+
 ## 1.0.3
 
 - Added flexible placement for the Fishing Pond and Large Fishing Pond.
