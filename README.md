@@ -36,11 +36,30 @@ structures.
 Subscribe on Steam, enable **Building Placement Tweaks** under
 **Options -> Mod Management**, and restart Palworld.
 
-### Manual client or server installation
+### Dedicated servers
 
-Choose the PAK built for the target platform and place it in that Palworld
-installation's active PAK mod directory. Keep the same mod version across the
-participating client, host, and server installations.
+Use the PAK that matches the server operating system. Stop the server before
+replacing the file, then install it at the following path relative to the
+Palworld Dedicated Server root:
+
+| Server | PAK | Installation path |
+|---|---|---|
+| Windows | `BuildingPlacementTweaks_WindowsServer_P.pak` | `Pal\Content\Paks\~WorkshopMods\BuildingPlacementTweaks\BuildingPlacementTweaks_WindowsServer_P.pak` |
+| Linux | `BuildingPlacementTweaks_LinuxServer_P.pak` | `Pal/Content/Paks/~WorkshopMods/BuildingPlacementTweaks/BuildingPlacementTweaks_LinuxServer_P.pak` |
+
+Create the `~WorkshopMods/BuildingPlacementTweaks` directory if it does not
+exist. Make sure that no older copy of Building Placement Tweaks remains in a
+different active PAK directory, then fully restart the server.
+
+Palworld's official server-side Workshop loader currently supports only the
+Windows Dedicated Server. The Linux server PAK is installed directly using the
+path above.
+
+Every participating client, co-op host, and dedicated server must use the same
+Building Placement Tweaks release. Do not mix the Windows client, Windows
+server, or Linux server PAKs. Clients using Steam Workshop must enable
+**Building Placement Tweaks** under **Options -> Mod Management** and fully
+restart Palworld after installing or updating it.
 
 ## Repository
 

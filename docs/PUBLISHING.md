@@ -36,7 +36,7 @@ Prepare and verify the package without opening the uploader:
 Suggested change note:
 
 ```text
-Rebuilt the mod for Palworld 1.0.3 so the game's updated building costs are preserved.
+Rebuilt all client and dedicated server packages for Palworld 1.0.3, preserving the game's updated building material costs. Added clear Windows and Linux server installation paths.
 ```
 
 ## GitHub release
